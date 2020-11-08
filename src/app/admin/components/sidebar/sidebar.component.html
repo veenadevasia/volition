@@ -1,0 +1,116 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="list-group">
+        
+     
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('beauty')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Beauty' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'beauty'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/beauty/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+   
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('churidars')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Churidars' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'churidars'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/churidars/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('kurtas')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Kurtas' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'kurtas'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/kurtas/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('sarees')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Sarees' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'sarees'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/sarees/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('jeans')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Jeans' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'jeans'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/jeans/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('ethnic')">
+                <!-- <i class="fa fa-calendar"></i>&nbsp; -->
+                <span>{{ 'Ethnic Wears' }}</span>
+            </a>
+                    <li class="nested" [class.expand]="showMenu === 'ethnic'">
+                <ul class="submenu">
+                    <li>
+                        <a routerLink="/admin/ethnic/view" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <span>{{ 'View'}}</span>
+                        </a>
+                    </li>
+                    
+
+                </ul>
+            </li>
+        </div>
+
+       
+    </div>
+    
+</nav>

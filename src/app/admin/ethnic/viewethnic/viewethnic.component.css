@@ -1,0 +1,11 @@
+.logo{
+    width:210px;
+    height:260px;
+    left:10px;
+    cursor: pointer;
+    
+  }
+
+  .btn-primary {
+    border-radius: 50%;
+  }

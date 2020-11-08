@@ -1,0 +1,22 @@
+@keyframes multicolor
+{
+0% {color:darkgreen;}
+40% {color:hotpink;}
+60%{color:darkgreen;}
+80% {color:hotpink;}
+}
+@-webkit-keyframes multicolor /* Chrome */
+{
+0% {color:darkgeen;}
+40% {color:hotpink;}
+60%{color:darkgreen;}
+80% {color:hotpink;}
+}
+
+h1{
+    color:crimson; 
+    font-weight: 100;
+    font-size: 50px;
+    animation:multicolor 5s infinite; 
+    -webkit-animation:multicolor 5s infinite;
+}

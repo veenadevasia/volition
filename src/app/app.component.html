@@ -1,0 +1,27 @@
+
+ <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color: #192f59;" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <!-- <a class="nav-item nav-link">Admin</a> -->
+        <a class="nav-item nav-link" routerLink="/admin" *ngIf="isAdmin">Surprise</a>
+        <a class="nav-item nav-link" routerLink="/user" *ngIf="isUser">User</a>
+
+        <a class="nav-item nav-link pull-right" style="margin-left:1120px; " (click)="logout()">Logout</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+
+    
+
+
+             <alert></alert>
+          
+            <router-outlet></router-outlet>
+
+         
+       
+            
+       
+
+
